@@ -1,5 +1,4 @@
-  
- #N°         Actividades                                       Estimación  [✔] Completada 
+  # N°         Actividades                                       Estimación  [✔] Completada 
                                                                           [✖] Por terminar
  1.  Creaciòn modelo para la solucion.                           3h       [✔]
  2.  Creaciòn de script BD                                       1h       [✔]
@@ -17,7 +16,7 @@
  14. Pruebas unitarias WS Usuario & Login (postman)              4h       [✔]
  
 
- #Programas Utilizados:
+ # Programas Utilizados:
  1. DataModeler 17.2.0
  2. Notepad ++
  3. Netbeans 8.2
