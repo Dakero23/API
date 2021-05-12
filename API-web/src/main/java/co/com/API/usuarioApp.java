@@ -7,8 +7,6 @@ import co.com.api.prueba.Entidad.Usuario;
 import co.com.api.prueba.classabstract.AbstractUsuarioDao;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
