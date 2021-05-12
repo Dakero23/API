@@ -1,0 +1,5 @@
+co\com\API\usuarioApp.class
+co\com\API\controller\AbstractValidacion.class
+org\netbeans\rest\application\config\ApplicationConfig.class
+co\com\API\entidad\RespuestaWS.class
+co\com\API\aplicacion.class
