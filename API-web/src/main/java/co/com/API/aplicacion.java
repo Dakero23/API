@@ -42,7 +42,7 @@ public class aplicacion {
             Token token = (Token) retorno.getObjetoRetorno();
             respuestaWS.setCodigo(200);
             respuestaWS.setMensaje(retorno.getMensajeProceso());
-//            respuestaWS.setToken((Token) retorno.getObjetoRetorno());
+
             request.put("token", token.getTknToken());
         } else {
             respuestaWS.setCodigo(400);
