@@ -1,4 +1,4 @@
-  # N°         Actividades                                       Estimación  [✔] Completada 
+   N°         Actividades                                       Estimación  [✔] Completada 
                                                                           [✖] Por terminar
  1.  Creaciòn modelo para la solucion.                           3h       [✔]
  2.  Creaciòn de script BD                                       1h       [✔]
