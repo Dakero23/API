@@ -5,3 +5,6 @@ Documentos encontrados en la carpeta API/PL
  2. QB_CRUD_APLICACION.sql
  3. QB_LOGICA_APLICACION.sql
  4. Triggers.sql 
+Documento de pruebas realizadas:
+ 1. Consumo.postman_collection.json
+ 
