@@ -1,0 +1,33 @@
+create or replace  TRIGGER db_INS_usu
+  BEFORE
+    INSERT ON USUARIO REFERENCING OLD AS OLD NEW AS NEW FOR EACH ROW
+DECLARE
+    nmUSU_ID   NUMBER;
+BEGIN
+  BEGIN
+    SELECT MAX(NVL(USU_ID,0))
+      INTO nmUSU_ID
+      FROM USUARIO;
+  EXCEPTION
+  WHEN OTHERS THEN
+    nmUSU_ID := 0;
+  END;
+  :new.USU_ID :=  nvl(nmUSU_ID,0)+1;
+END;
+/
+create or replace TRIGGER db_INS_TTJ
+  BEFORE
+    INSERT ON TIPO_TARJETA REFERENCING OLD AS OLD NEW AS NEW FOR EACH ROW
+DECLARE
+    nmttj_id   NUMBER;
+BEGIN
+  BEGIN
+    SELECT MAX(NVL(ttj_id,0))
+      INTO nmttj_id
+      FROM TIPO_TARJETA;
+  EXCEPTION
+  WHEN OTHERS THEN
+    nmttj_id := 0;
+  END;
+  :new.TTJ_ID :=  nvl(nmttj_id,0)+1;
+END;
