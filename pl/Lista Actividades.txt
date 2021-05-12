@@ -13,6 +13,6 @@
  10. creación de web service consulta token                      1h       [✔]
  11. Procedimientos adicionales logica PL                        1h       [✔]
  12. procedimiento seguridad contraseñas                         2h       [✔]
- 13. WS Crud Usuario                                           3h - 5h    [✔]
+ 13. WS Crud Usuario                                           1h - 2h    [✔]
  14. Pruebas unitarias WS Usuario & Login (postman)              4h       [✔]
  
