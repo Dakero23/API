@@ -26,12 +26,12 @@ public abstract class AbstractEmpresaDao {
         return empresaD.eliminaEmpresa(p_empresa);
     }
 
-    public static List<Empresa> query_pk_Empresa(Empresa p_empresa) {
-        return (List<Empresa>) empresaD.query_pk_Empresa(p_empresa).getObjetoRetorno();
+    public static GestionRetornoObjeto query_pk_Empresa(Empresa p_empresa) {
+        return empresaD.query_pk_Empresa(p_empresa);
     }
 
-    public static List<Empresa> query_todos_Empresa() {
-        return (List<Empresa>) empresaD.query_todos_Empresa().getObjetoRetorno();
+    public static GestionRetornoObjeto query_todos_Empresa() {
+        return empresaD.query_todos_Empresa();
     }
 
 }

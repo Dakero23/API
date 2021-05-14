@@ -7,7 +7,7 @@ public class Empresa implements Serializable {
 
     private int empId;
     private String tipDoc;
-    private int empDoc;
+    private Long empDoc;
     private String empNom;
 
     public Empresa() {
@@ -16,7 +16,7 @@ public class Empresa implements Serializable {
     public Empresa(
             int empId,
             String tipDoc,
-            int empDoc,
+            Long empDoc,
             String empNom) {
         this.empId = empId;
         this.tipDoc = tipDoc;
@@ -40,11 +40,11 @@ public class Empresa implements Serializable {
         this.tipDoc = tipDoc;
     }
 
-    public int getEmpDoc() {
+    public Long getEmpDoc() {
         return empDoc;
     }
 
-    public void setEmpDoc(int empDoc) {
+    public void setEmpDoc(Long empDoc) {
         this.empDoc = empDoc;
     }
 

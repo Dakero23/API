@@ -26,12 +26,12 @@ public abstract class AbstractTarjetaDao {
         return tarjetaD.eliminaTarjeta(p_tarjeta);
     }
 
-    public static List<Tarjeta> query_pk_Tarjeta(Tarjeta p_tarjeta) {
-        return (List<Tarjeta>) tarjetaD.query_pk_Tarjeta(p_tarjeta).getObjetoRetorno();
+    public static GestionRetornoObjeto query_pk_Tarjeta(Tarjeta p_tarjeta) {
+        return tarjetaD.query_pk_Tarjeta(p_tarjeta);
     }
 
-    public static List<Tarjeta> query_todos_Tarjeta() {
-        return (List<Tarjeta>) tarjetaD.query_todos_Tarjeta().getObjetoRetorno();
+    public static GestionRetornoObjeto query_todos_Tarjeta() {
+        return tarjetaD.query_todos_Tarjeta();
     }
 
 }

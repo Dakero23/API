@@ -26,12 +26,12 @@ public abstract class AbstractTipoUsuarioDao {
         return tipoUsuarioD.eliminaTipoUsuario(p_tipoUsuario);
     }
 
-    public static List<TipoUsuario> query_pk_TipoUsuario(TipoUsuario p_tipoUsuario) {
-        return (List<TipoUsuario>) tipoUsuarioD.query_pk_TipoUsuario(p_tipoUsuario).getObjetoRetorno();
+    public static GestionRetornoObjeto query_pk_TipoUsuario(TipoUsuario p_tipoUsuario) {
+        return tipoUsuarioD.query_pk_TipoUsuario(p_tipoUsuario);
     }
 
-    public static List<TipoUsuario> query_todos_TipoUsuario() {
-        return (List<TipoUsuario>) tipoUsuarioD.query_todos_TipoUsuario().getObjetoRetorno();
+    public static GestionRetornoObjeto query_todos_TipoUsuario() {
+        return tipoUsuarioD.query_todos_TipoUsuario();
     }
 
 }

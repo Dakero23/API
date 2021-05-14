@@ -15,7 +15,6 @@ co\com\api\prueba\Controller\ServiciosTokenDao.class
 co\com\api\prueba\Interface\InterfaceTipoTarjetaDao.class
 co\com\api\prueba\Entidad\UsuarioSesion.class
 co\com\api\prueba\Interface\InterfaceServiciosDao.class
-.netbeans_automatic_build
 co\com\api\prueba\Entidad\Empresa.class
 co\com\api\prueba\Controller\TarjetaDao.class
 co\com\api\prueba\Controller\TipoUsuarioDao.class

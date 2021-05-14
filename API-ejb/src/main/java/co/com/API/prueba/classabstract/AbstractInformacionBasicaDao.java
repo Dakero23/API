@@ -4,7 +4,6 @@ import co.com.activos.Utilidad.GestionRetornoObjeto;
 import co.com.api.prueba.Entidad.InformacionBasica;
 import co.com.api.prueba.Interface.InterfaceInformacionBasicaDao;
 import co.com.api.prueba.Controller.InformacionBasicaDao;
-import java.util.List;
 
 /**
  *
@@ -26,12 +25,12 @@ public abstract class AbstractInformacionBasicaDao {
         return informacionBasicaD.eliminaInformacionBasica(p_informacionBasica);
     }
 
-    public static List<InformacionBasica> query_pk_InformacionBasica(InformacionBasica p_informacionBasica) {
-        return (List<InformacionBasica>) informacionBasicaD.query_pk_InformacionBasica(p_informacionBasica).getObjetoRetorno();
+    public static GestionRetornoObjeto query_pk_InformacionBasica(InformacionBasica p_informacionBasica) {
+        return informacionBasicaD.query_pk_InformacionBasica(p_informacionBasica);
     }
 
-    public static List<InformacionBasica> query_todos_InformacionBasica() {
-        return (List<InformacionBasica>) informacionBasicaD.query_todos_InformacionBasica().getObjetoRetorno();
+    public static GestionRetornoObjeto query_todos_InformacionBasica() {
+        return informacionBasicaD.query_todos_InformacionBasica();
     }
 
 }

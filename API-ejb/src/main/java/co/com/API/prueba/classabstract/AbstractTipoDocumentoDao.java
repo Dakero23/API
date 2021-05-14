@@ -26,12 +26,12 @@ public abstract class AbstractTipoDocumentoDao {
         return tipoDocumentoD.eliminaTipoDocumento(p_tipoDocumento);
     }
 
-    public static List<TipoDocumento> query_pk_TipoDocumento(TipoDocumento p_tipoDocumento) {
-        return (List<TipoDocumento>) tipoDocumentoD.query_pk_TipoDocumento(p_tipoDocumento).getObjetoRetorno();
+    public static GestionRetornoObjeto query_pk_TipoDocumento(TipoDocumento p_tipoDocumento) {
+        return tipoDocumentoD.query_pk_TipoDocumento(p_tipoDocumento);
     }
 
-    public static List<TipoDocumento> query_todos_TipoDocumento() {
-        return (List<TipoDocumento>) tipoDocumentoD.query_todos_TipoDocumento().getObjetoRetorno();
+    public static GestionRetornoObjeto query_todos_TipoDocumento() {
+        return tipoDocumentoD.query_todos_TipoDocumento();
     }
 
 }

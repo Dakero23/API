@@ -26,12 +26,12 @@ public abstract class AbstractServiciosDao {
         return serviciosD.eliminaServicios(p_servicios);
     }
 
-    public static List<Servicios> query_pk_Servicios(Servicios p_servicios) {
-        return (List<Servicios>) serviciosD.query_pk_Servicios(p_servicios).getObjetoRetorno();
+    public static GestionRetornoObjeto query_pk_Servicios(Servicios p_servicios) {
+        return serviciosD.query_pk_Servicios(p_servicios);
     }
 
-    public static List<Servicios> query_todos_Servicios() {
-        return (List<Servicios>) serviciosD.query_todos_Servicios().getObjetoRetorno();
+    public static GestionRetornoObjeto query_todos_Servicios() {
+        return serviciosD.query_todos_Servicios();
     }
 
 }

@@ -45,7 +45,7 @@ public class EmpresaDao implements InterfaceEmpresaDao {
             //Parametros de entrada
             callableStatement.setInt("NMEMP_ID", empresa.getEmpId());
             callableStatement.setString("VCTIP_DOC", empresa.getTipDoc());
-            callableStatement.setInt("NMEMP_DOC", empresa.getEmpDoc());
+            callableStatement.setLong("NMEMP_DOC", empresa.getEmpDoc());
             callableStatement.setString("VCEMP_NOM", empresa.getEmpNom());
 
             //Parametros de salida 
@@ -99,7 +99,7 @@ public class EmpresaDao implements InterfaceEmpresaDao {
             //Parametros de entrada
             callableStatement.setInt("NMEMP_ID", empresa.getEmpId());
             callableStatement.setString("VCTIP_DOC", empresa.getTipDoc());
-            callableStatement.setInt("NMEMP_DOC", empresa.getEmpDoc());
+            callableStatement.setLong("NMEMP_DOC", empresa.getEmpDoc());
             callableStatement.setString("VCEMP_NOM", empresa.getEmpNom());
 
             //Parametros de salida 
@@ -225,7 +225,7 @@ public class EmpresaDao implements InterfaceEmpresaDao {
                 empresa = new Empresa(
                         rs.getInt("EMP_ID"),
                         rs.getString("TIP_DOC"),
-                        rs.getInt("EMP_DOC"),
+                        rs.getLong("EMP_DOC"),
                         rs.getString("EMP_NOM"));
 
                 listaEmpresa.add(empresa);
@@ -294,7 +294,7 @@ public class EmpresaDao implements InterfaceEmpresaDao {
                 empresa = new Empresa(
                         rs.getInt("EMP_ID"),
                         rs.getString("TIP_DOC"),
-                        rs.getInt("EMP_DOC"),
+                        rs.getLong("EMP_DOC"),
                         rs.getString("EMP_NOM"));
 
                 listaEmpresa.add(empresa);
