@@ -29,6 +29,13 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(co.com.API.aplicacion.class);
+        resources.add(co.com.API.empresaApp.class);
+        resources.add(co.com.API.informacionBasicaApp.class);
+        resources.add(co.com.API.serviciosApp.class);
+        resources.add(co.com.API.tarjetaApp.class);
+        resources.add(co.com.API.tipoDocumentoApp.class);
+        resources.add(co.com.API.tipoUsuarioApp.class);
+        resources.add(co.com.API.tipotarjeta.class);
         resources.add(co.com.API.usuarioApp.class);
     }
 
